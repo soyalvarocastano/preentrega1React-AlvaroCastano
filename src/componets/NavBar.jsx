@@ -1,29 +1,32 @@
-import { Link } from "react-scroll"
+import CartWidget from "./CartWidget";
 
-export default function NavBar (){
-  return(
-   <nav>
-  <div className="h-10vh flex justify-content-between z-50 text-white lg:py-5 px-20 py-4">
-    <div className="flex items-center flex-1">
-      <span className="text-3xl font-bold">Logo</span>
-    </div>
-   <div className="lg:flex md:flex lg: flex-1 items center justify-end font-normal hidden">
-   <ul>
-    <Link to="Inicio">
-    <li>Inicio</li>
-    </Link>
-    <Link to="Servicios">
-    <li>Servicios</li>
-    </Link>
-    <Link to="Contacto">
-    <li>Contacto</li>
-    </Link>
-    <Link to="Formulario">
-    <li>Formulario</li>
-    </Link>
-    </ul>
-   </div>
-  </div>
-  </nav>
-  )
-}
+
+const Navbar = () => {
+  return (
+    <nav className="bg-dark-800 text-white">
+      <div className="container mx-auto flex items-center justify-between p-4">
+        
+        
+        <div className="flex-shrink-0">
+          <img src="./images/logo.jpg" alt="Logo" className="h-10 w-auto"/>
+        </div>
+
+        
+        <div className="hidden md:flex space-x-8">
+          <a href="/" className="text-lg hover:text-gray-400">Inicio</a>
+          <a href="/services" className="text-lg hover:text-gray-400">Servicios</a>
+          <a href="/contact" className="text-lg hover:text-gray-400">Contacto</a>
+          <a href="/form" className="text-lg hover:text-gray-400">Formulario</a>
+        </div>
+
+        
+        <div>
+          <CartWidget />
+        </div>
+
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
