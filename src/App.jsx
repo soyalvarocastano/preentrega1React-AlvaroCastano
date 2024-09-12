@@ -1,7 +1,6 @@
 import ItemListContainer from "./componets/ItemListContainer"
 import NavBar from "./componets/Navbar"
-
-
+import PropGreeting from "./componets/propGreeting"
 
 function App() {
 
@@ -14,7 +13,7 @@ function App() {
     <ItemListContainer />
     </div>
     <div>
-      <propGreeting greeting="En mantenimiento"/>
+      <PropGreeting greeting="En mantenimiento"/>
     </div>
     </>
   )

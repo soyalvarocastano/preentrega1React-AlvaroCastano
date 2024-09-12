@@ -1,5 +1,5 @@
 
-export default function propGreeting({greeting}){
+export default function PropGreeting({greeting}){
 
     return(
         <>

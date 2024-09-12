@@ -1,4 +1,7 @@
 .texto{
     color: red;
     background-color: black;
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
 }
