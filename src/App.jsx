@@ -7,11 +7,14 @@ function App() {
 
   return (
 
-    <><div className="bg-slate-900">
+    <><div>
       <NavBar />
     </div>
     <div>
     <ItemListContainer />
+    </div>
+    <div>
+      <propGreeting greeting="En mantenimiento"/>
     </div>
     </>
   )

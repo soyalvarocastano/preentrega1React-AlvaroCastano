@@ -3,12 +3,12 @@ import CartWidget from "./CartWidget";
 
 const Navbar = () => {
   return (
-    <nav className="bg-dark-800 text-white">
+    <nav className="bg-slate-900 text-white">
       <div className="container mx-auto flex items-center justify-between p-4">
         
         
         <div className="flex-shrink-0">
-          <img src="./images/logo.jpg" alt="Logo" className="h-10 w-auto"/>
+          <img src="./images/logo.jpg" alt="Logo" className="h-20 w-auto"/>
         </div>
 
         
